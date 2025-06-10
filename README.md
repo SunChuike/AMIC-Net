@@ -23,16 +23,16 @@ AMIC-Net's counterfactual prediction mechanism is detailed below through the der
 
 Given a sequence containing the target item and its interests {X = x,Z = z}, {X = x, Z = z_mask } and {X =x_mask, Z =z}form a partition, which are mutually exclusive and collectively exhaustive. According to the equation of total probability, we have:
 
-P(Y=1|X=x_mask, Z=z)P(X=x_mask, Z=z) = P(Y=1|X=x, Z=z)P(X=x, Z=z) – P(Y=1|X=x, Z=z_mask)P(X=x, Z=z_mask)     (12)
+P(Y=1|X=x_mask, Z=z) * P(X=x_mask, Z=z) = P(Y=1|X=x, Z=z) * P(X=x, Z=z) – P(Y=1|X=x, Z=z_mask) * P(X=x, Z=z_mask)     (12)
 
 By dividing both sides by P(X=x_mask, Z=z), we obtain:
 
-P(Y=1|X=x_mask, Z=z) = P(X=x, Z=z)P(X=x, Z=z) / P(X=x_mask, Z=z)P(Y=1|X=x, Z=z) – P(X=x, Z=z_mask) / P(X=x_mask, Z=z)P(Y=1|X=x, Z=z_mask) = αP(Y=1|X=x, Z=z) – βP(Y=1|X=x, Z=z_mask)    (13)
+P(Y=1|X=x_mask, Z=z) = P(X=x, Z=z)P(X=x, Z=z) / P(X=x_mask, Z=z) * P(Y=1|X=x, Z=z) – P(X=x, Z=z_mask) / P(X=x_mask, Z=z) * P(Y=1|X=x, Z=z_mask) = αP(Y=1|X=x, Z=z) – βP(Y=1|X=x, Z=z_mask)    (13)
 
 where α = P(X=x, Z=z) / P(X=x_mask, Z=z) and β = P(X=x, Z=z_mask) / P(X=x_mask, Z=z) are data-dependent parameters.
 
 Substituting the result of equation Eq.(13) into Eq.(8), we have:
 
-y_^ = P(Y=1|X=x, Z=z) – P(Y=1|X=x_mask, Z=z) = (1 - α)P(Y=1|X=x, Z=z) + βP(Y=1|X=x, Z=z_mask)
+y^ = P(Y=1|X=x, Z=z) – P(Y=1|X=x_mask, Z=z) = (1 - α) * P(Y=1|X=x, Z=z) + β * P(Y=1|X=x, Z=z_mask)
 
-By dividing both sides by (1 - α) for each example, we obtain y_^ = P(Y=1|X=x, Z=z) + λP(Y=1|X=x, Z=z_mask), where λ = β / (1 - α). We neglect the denominator (1−α) for y_^ since it does not affect the final result.
+By dividing both sides by (1 - α) for each example, we obtain y^ = P(Y=1|X=x, Z=z) + λ * P(Y=1|X=x, Z=z_mask), where λ = β / (1 - α). We neglect the denominator (1−α) for y_^ since it does not affect the final result.
