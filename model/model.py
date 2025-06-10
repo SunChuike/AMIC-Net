@@ -365,6 +365,10 @@ class ActiveNet(Algorithm):
         seq_split_logits_list = []
         for i in range(self.seq_split_num):
             seq_split_main_net_layer = []
+            for block_name in (self.main_column_blocks):
+                if not self.layer_dict.has_key(block_name):
+                    raise ValueError('[seq split net, layer dict] does not has block : {}'.format(block_name))
+                seq_split_main_net_layer.append(self.layer_dict[block_name])
             for block_name in (self.seq_column_blocks):
                 if not self.layer_dict.has_key(block_name):
                     raise ValueError('[seq split net, layer dict] does not has block : {}'.format(block_name))
