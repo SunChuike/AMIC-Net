@@ -39,4 +39,4 @@ Substituting the result of equation Eq.(13) into Eq.(8), we have:
 
 y^ = P(Y=1|X=x, Z=z) – P(Y=1|X=x_mask, Z=z) = (1 - α) * P(Y=1|X=x, Z=z) + β * P(Y=1|X=x, Z=z_mask)
 
-By dividing both sides by (1 - α) for each example, we obtain y^ = P(Y=1|X=x, Z=z) + λ * P(Y=1|X=x, Z=z_mask), where λ = β / (1 - α). We neglect the denominator (1−α) for y_^ since it does not affect the final result.
+By dividing both sides by (1 - α) for each example, we obtain y^ = P(Y=1|X=x, Z=z) + λ * P(Y=1|X=x, Z=z_mask), where λ = β / (1 - α). We neglect the denominator (1 − α) for y^ since it does not affect the final result.
