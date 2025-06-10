@@ -31,7 +31,7 @@ P(Y=1|X=x_mask, Z=z)
 
 = P(X=x, Z=z)P(X=x, Z=z) / P(X=x_mask, Z=z) * P(Y=1|X=x, Z=z) – P(X=x, Z=z_mask) / P(X=x_mask, Z=z) * P(Y=1|X=x, Z=z_mask)
 
-= αP(Y=1|X=x, Z=z) – βP(Y=1|X=x, Z=z_mask)    (13)
+= α * P(Y=1|X=x, Z=z) – β * P(Y=1|X=x, Z=z_mask)    (13)
 
 where α = P(X=x, Z=z) / P(X=x_mask, Z=z) and β = P(X=x, Z=z_mask) / P(X=x_mask, Z=z) are data-dependent parameters.
 
