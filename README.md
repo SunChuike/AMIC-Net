@@ -16,5 +16,6 @@ The AMIC-Net architecture, highlighting critical modules, is shown below. Accomp
 
 The detailed derivations for Formulas 8 and 9 are provided below:
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/e1980d8e-62c6-4306-96ff-ff3b7efedc28)
+
 
