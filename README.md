@@ -1,15 +1,14 @@
 # AMIC-Net: Counterfactual Reasoning for Weak Interest Overfitting in Sequential Recommendation
 
-This repository contains the official implementation of our proposed method from the paper:
-**"Counterfactual Reasoning for Weak Interest Overfitting in Sequential Recommendation via Interest Segmentation"**
+Offical repo for: **"Counterfactual Reasoning for Weak Interest Overfitting in Sequential Recommendation via Interest Segmentation"**
 
 ## Important Note on Current Release
-The full implementation of AMIC-Net is deeply integrated with our proprietary, industrial-scale distributed TensorFlow framework and relies on confidential internal datasets for optimal performance in real-world applications. Due to these constraints, this repository provides a carefully extracted and simplified version of the source code. While it is not runnable out-of-the-box, it serves as supplementary material to clearly illustrate the core algorithms, the implementation details of our proposed model architecture, and the logic behind key modules. Our goal is to offer transparency into our method's design.
+The implementation of AMIC-Net is based on our company's customized distributed TensorFlow framework, designed to optimize industrial applications. Due to company policy, this repository provides a carefully extracted and simplified version of the source code. While it is not runnable out-of-the-box, it is intended as supporting material to clearly illustrate the implementation logic of the model architecture and key modules, thereby enhancing the transparency of our method's design.
 
-We are committed to providing a fully runnable and reproducible version of AMIC-Net for the community. A future update will include a self-contained implementation based on the publicly available "UserBehavior Dataset: https://tianchi.aliyun.com/dataset/649". Please stay tuned for updates!
+We aim to provide an out-of-the-box AMIC-Net version for the community. A forthcoming update will feature an implementation leveraging the publicly available 'UserBehavior Dataset' (https://tianchi.aliyun.com/dataset/649).
 
 ## Model Architecture & Key Components
-AMIC-Net  overall architecture is depicted below, with critical modules highlighted. The released code snippets correspond to these highlighted parts, demonstrating their implementation logic.
+The AMIC-Net architecture, highlighting critical modules, is shown below. Accompanying code snippets illustrate their implementation logic.
 
 *   **Overall Model Structure:**
 ![model](https://github.com/user-attachments/assets/ee9a961e-f3bd-4a51-8cd3-83d72abcf13a)
