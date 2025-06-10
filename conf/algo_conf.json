@@ -44,7 +44,7 @@
         "staircase": true
       }
     },
-    "main_columns": "user_columns;item_columns",
+    "main_columns": "user_columns;item_columns;context_columns",
     "seq_column_blocks": "all_clk_seq_list:all_clk_seq_len_columns:target_columns:all_clk_seq_v_feats"
   }
 }
