@@ -14,7 +14,6 @@ The AMIC-Net architecture, highlighting critical modules, is shown below. Accomp
 *   **Annotated Code Snippet for Key Modules (model.py):**
 ![image](https://github.com/user-attachments/assets/275d21ce-ef2a-4428-87ad-71f23c66bf10)
 
-## Mathematical Rigor for Counterfactual Reasoning
 
 The detailed derivations for Formulas 8 and 9 are provided below:
 
