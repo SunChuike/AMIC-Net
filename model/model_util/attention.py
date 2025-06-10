@@ -261,37 +261,3 @@ def attention(queries,
     return item_vec, stt_vec
 
 
-def weight_attention(queries,
-                     keys,
-                     num_units,
-                     num_output_units,
-                     reuse,
-                     scope,
-                     atten_mode,
-                     variables_collections,
-                     outputs_collections,
-                     activation_fn=None,
-                     query_masks=None,
-                     key_masks=None,
-                     num_heads=8,
-                     residual_connection=False,
-                     attention_normalize=False):
-
-    _, stt_vec = multihead_attention(queries=queries,
-                                     keys=keys,
-                                     num_units=num_units,
-                                     num_output_units=num_output_units,
-                                     activation_fn=activation_fn,
-                                     scope=scope,
-                                     atten_mode=atten_mode,
-                                     reuse=reuse,
-                                     query_masks=query_masks,
-                                     key_masks=key_masks,
-                                     variables_collections=variables_collections,
-                                     outputs_collections=outputs_collections,
-                                     num_heads=num_heads,
-                                     residual_connection=residual_connection,
-                                     attention_normalize=attention_normalize)
-
-    return stt_vec
-
