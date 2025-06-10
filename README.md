@@ -3,7 +3,7 @@
 ## Release Notes (Current Version)
 The implementation of AMIC-Net is based on our company's customized distributed TensorFlow framework, designed to optimize industrial applications. Due to company policy, this repository provides a carefully extracted and simplified version of the source code. While it is not runnable out-of-the-box, it is intended as supporting material to clearly illustrate the implementation logic of the model architecture and key modules, thereby enhancing the transparency of our method's design.
 
-We aim to provide an out-of-the-box AMIC-Net version for the community. A forthcoming update will feature an implementation leveraging the publicly available 'UserBehavior Dataset' (https://tianchi.aliyun.com/dataset/649).
+We aim to provide an out-of-the-box AMIC-Net version for the community. A forthcoming update will feature an implementation leveraging the publicly available [UserBehavior Dataset](https://tianchi.aliyun.com/dataset/649).  
 
 ## Model Architecture & Key Components
 The AMIC-Net architecture, highlighting critical modules, is shown below. Accompanying code snippets illustrate their implementation logic.
