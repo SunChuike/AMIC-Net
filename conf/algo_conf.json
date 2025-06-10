@@ -1,0 +1,56 @@
+{
+  "CTR": {
+    "model_type": "active_net",
+    "prob": "68",
+    "modelx": {
+      "model_hyperparameter": {
+        "activation": "lrelu",
+        "dnn_hidden_units": [
+          512,
+          256,
+          128
+        ],
+        "need_dropout": true,
+        "dropout_rate": 0.5,
+        "dnn_l2_reg": 1e-5,
+        "atten_param": {
+          "atten_mode": "ln",
+          "residual_connection": false,
+          "attention_normalize": true,
+          "attention_l2_reg": 1e-5,
+          "sa_num_units": 64,
+          "sa_num_output_units": 64,
+          "ma_num_units": 64,
+          "ma_num_output_units": 64,
+          "num_heads": 1,
+          "seq_type": "concat"
+        },
+        "batch_norm": true,
+        "seq_split_num": 4,
+        "logits_temperature": 1,
+        "logits_lamda": 1
+      }
+    },
+    "optimizer": {
+      "Adagrad": {
+        "scope": "Global",
+        "lr_func": "cold_start",
+        "learning_rate": 0.1,
+        "lrcs_init_lr": 0.001,
+        "lrcs_init_step": 200000,
+        "decay_step": 100000,
+        "decay_rate": 0.95,
+        "clip_gradients": 5.0,
+        "staircase": true
+      }
+    },
+    "metrics": {
+      "auc_compute": {
+        "true_positives": 100000
+      }
+    },
+    "main_columns": "user_columns;item_columns",
+    "bias_columns": "bias_columns",
+    "seq_column_blocks": "all_clk_seq_list:all_clk_seq_len_columns:target_columns:all_clk_seq_v_feats"
+  }
+}
