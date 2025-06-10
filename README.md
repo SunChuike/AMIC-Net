@@ -14,11 +14,11 @@ The AMIC-Net architecture, highlighting critical modules, is shown below. Accomp
 *   **Annotated Code Snippet for Key Modules (model.py):**
 ![image](https://github.com/user-attachments/assets/275d21ce-ef2a-4428-87ad-71f23c66bf10)
 
-## Key Derivations for Counterfactual Causal Fusion
+## Mathematical Rigor for Counterfactual Reasoning
 
-AMIC-Net's counterfactual prediction mechanism is detailed below through the derivations of Formulas 8 to 9 (as presented in our paper):
+The detailed derivations for Formulas 8 and 9 are provided below:
 
-Given a sequence containing the target item and its interests {X = x,Z = z}, {X = x, Z = z_mask } and {X =x_mask, Z =z}form a partition, which are mutually exclusive and collectively exhaustive. According to the equation of total probability, we have:
+Given a sequence containing user strong and weak interests: {X = x, Z = z}, {X = x, Z = z_mask} and {X = x_mask, Z = z} form a partition, which are mutually exclusive and collectively exhaustive. According to the equation of total probability, we have:
 
 P(Y=1|X=x_mask, Z=z) * P(X=x_mask, Z=z) = P(Y=1|X=x, Z=z) * P(X=x, Z=z) – P(Y=1|X=x, Z=z_mask) * P(X=x, Z=z_mask)     (12)
 
