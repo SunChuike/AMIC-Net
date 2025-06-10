@@ -8,7 +8,7 @@ The full implementation of AMIC-Net is deeply integrated with our proprietary, i
 
 We are committed to providing a fully runnable and reproducible version of AMIC-Net for the community. A future update will include a self-contained implementation based on the publicly available "UserBehavior Dataset: https://tianchi.aliyun.com/dataset/649". Please stay tuned for updates!
 
-## 🛠️ Model Architecture & Key Components
+## Model Architecture & Key Components
 AMIC-Net  overall architecture is depicted below, with critical modules highlighted. The released code snippets correspond to these highlighted parts, demonstrating their implementation logic.
 
 *   **Overall Model Structure:**
@@ -22,10 +22,17 @@ AMIC-Net  overall architecture is depicted below, with critical modules highligh
 AMIC-Net's counterfactual prediction mechanism is detailed below through the derivations of Formulas 8 to 9 (as presented in our paper):
 
 Given a sequence containing the target item and its interests {X = x,Z = z}, {X = x, Z = z_mask } and {X =x_mask, Z =z}form a partition, which are mutually exclusive and collectively exhaustive. According to the equation of total probability, we have:
+
 P(Y=1|X=x_mask, Z=z)P(X=x_mask, Z=z) = P(Y=1|X=x, Z=z)P(X=x, Z=z) – P(Y=1|X=x, Z=z_mask)P(X=x, Z=z_mask)     (12)
+
 By dividing both sides by P(X=x_mask, Z=z), we obtain:
+
 P(Y=1|X=x_mask, Z=z) = P(X=x, Z=z)P(X=x, Z=z) / P(X=x_mask, Z=z)P(Y=1|X=x, Z=z) – P(X=x, Z=z_mask) / P(X=x_mask, Z=z)P(Y=1|X=x, Z=z_mask) = αP(Y=1|X=x, Z=z) – βP(Y=1|X=x, Z=z_mask)    (13)
+
 where α = P(X=x, Z=z) / P(X=x_mask, Z=z) and β = P(X=x, Z=z_mask) / P(X=x_mask, Z=z) are data-dependent parameters.
+
 Substituting the result of equation Eq.(13) into Eq.(8), we have:
+
 y_^ = P(Y=1|X=x, Z=z) – P(Y=1|X=x_mask, Z=z) = (1 - α)P(Y=1|X=x, Z=z) + βP(Y=1|X=x, Z=z_mask)
+
 By dividing both sides by (1 - α) for each example, we obtain y_^ = P(Y=1|X=x, Z=z) + λP(Y=1|X=x, Z=z_mask), where λ = β / (1 - α). We neglect the denominator (1−α) for y_^ since it does not affect the final result.
