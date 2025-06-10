@@ -14,6 +14,6 @@ The AMIC-Net architecture, highlighting critical modules, is shown below. Accomp
 *   **Annotated Code Snippet for Key Modules (model.py):**
 <img src="https://github.com/user-attachments/assets/275d21ce-ef2a-4428-87ad-71f23c66bf10" width="600">
 
-*   **The detailed derivations for Formulas 8 to 9 are provided below:**
+*   **The detailed derivations for Formulas 8 to 9:**
 <img src="https://github.com/user-attachments/assets/e1980d8e-62c6-4306-96ff-ff3b7efedc28" width="600">
 
