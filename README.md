@@ -9,13 +9,11 @@ We aim to provide an out-of-the-box AMIC-Net version for the community. A forthc
 The AMIC-Net architecture, highlighting critical modules, is shown below. Accompanying code snippets illustrate their implementation logic.
 
 *   **Overall Model Structure:**
-![model](https://github.com/user-attachments/assets/ee9a961e-f3bd-4a51-8cd3-83d72abcf13a)
+<img src="https://github.com/user-attachments/assets/ee9a961e-f3bd-4a51-8cd3-83d72abcf13a" width="600">
 
 *   **Annotated Code Snippet for Key Modules (model.py):**
-![image](https://github.com/user-attachments/assets/275d21ce-ef2a-4428-87ad-71f23c66bf10)
+<img src="https://github.com/user-attachments/assets/275d21ce-ef2a-4428-87ad-71f23c66bf10" width="600">
 
 *   **The detailed derivations for Formulas 8 to 9 are provided below:**
-
-![image](https://github.com/user-attachments/assets/e1980d8e-62c6-4306-96ff-ff3b7efedc28)
-
+<img src="https://github.com/user-attachments/assets/e1980d8e-62c6-4306-96ff-ff3b7efedc28" width="600">
 
