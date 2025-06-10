@@ -44,11 +44,6 @@
         "staircase": true
       }
     },
-    "metrics": {
-      "auc_compute": {
-        "true_positives": 100000
-      }
-    },
     "main_columns": "user_columns;item_columns",
     "bias_columns": "bias_columns",
     "seq_column_blocks": "all_clk_seq_list:all_clk_seq_len_columns:target_columns:all_clk_seq_v_feats"
