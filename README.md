@@ -1,4 +1,4 @@
-# Offical repo for "Counterfactual Reasoning for Weak Interest Overfitting in Sequential Recommendation"
+# Offical repo for "Counterfactual Reasoning for Weak Interest Overfitting in Sequential Recommendation via Interest Segmentation"
 
 ## Release Notes (Current Version)
 The implementation of AMIC-Net is based on our company's customized distributed TensorFlow framework, designed to optimize industrial applications. Due to company policy, this repository provides a carefully extracted and simplified version of the source code. While it is not runnable out-of-the-box, it is intended as supporting material to clearly illustrate the implementation logic of the model architecture and key modules, thereby enhancing the transparency of our method's design.
@@ -9,7 +9,8 @@ We aim to provide an out-of-the-box AMIC-Net version for the community. A forthc
 The AMIC-Net architecture, highlighting critical modules, is shown below. Accompanying code snippets illustrate their implementation logic.
 
 *   **Overall Model Structure:**
-<img src="https://github.com/user-attachments/assets/ee9a961e-f3bd-4a51-8cd3-83d72abcf13a" width="600">
+
+<img width="2566" height="892" alt="model" src="https://github.com/user-attachments/assets/bbeb9f33-3847-4a72-b6ac-63c3facf3b00" />
 
 *   **Annotated Code Snippet for Key Modules (model.py):**
 <img src="https://github.com/user-attachments/assets/275d21ce-ef2a-4428-87ad-71f23c66bf10" width="600">
