@@ -21,7 +21,7 @@ The AMIC-Net architecture, highlighting critical modules, is shown below. Accomp
 <img src="https://github.com/user-attachments/assets/275d21ce-ef2a-4428-87ad-71f23c66bf10" width="600">
 
 ## **Citation**  
-If you use Appformer, please cite:  
+If you use AMIC-Net, please cite:  
 
 ```bibtex
 @InProceedings{10.1007/978-981-92-0378-9_40,
